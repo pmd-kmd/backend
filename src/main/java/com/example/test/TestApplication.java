@@ -12,6 +12,7 @@ public class TestApplication {
         SpringApplication.run(TestApplication.class, args);
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/api/hello")
     public String hello() {
         return "Hello from Spring Boot!";
